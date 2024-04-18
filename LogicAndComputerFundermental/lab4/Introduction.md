@@ -30,7 +30,7 @@
   ![alt text](image-2.png)
 </b>  
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).
-![](<image221.png>)
+![alt text](<image221.png>)
 </b>  
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>  
@@ -42,7 +42,7 @@
 </b>  
   Then you can click the "Execute" button and "Done" button.
 </b>  
-  Mention that when you can't find the verilog files, you can find it in the log.![alt text](image-4.png)
+  Mention that when you can't find the verilog files, you can find it in the log. ![alt text](image-4.png)
 </b>  
   Then you can find the verilog dir.
 
@@ -68,9 +68,8 @@
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
   + There is an important companent:Spilter(多位选择器). It is vital to your program.
-</b>
-  ![alt text](image-13.png)
 </b>  
+  ![alt text](image-13.png)
   + The properties menu is also important. It define all companents in the circuit diagram.
   ![alt text](image-14.png)
 </b>  
