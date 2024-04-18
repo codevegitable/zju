@@ -67,6 +67,7 @@
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
   + There is an important companent:Spilter(多位选择器). It is vital to your program.
+</b>
   ![alt text](image-13.png)
 </b>  
   + The properties menu is also important. It define all companents in the circuit diagram.
