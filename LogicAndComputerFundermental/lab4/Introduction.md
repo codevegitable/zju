@@ -20,7 +20,8 @@
   As you can see, there are many options in the menu. What are they used for?
   + File:
   "File" option includes many options that are related to the file operations. For example: save files, create files, open files, etc.
-  ![alt text](image-1.png)</b>
+  ![alt text](image-1.png)
+</b>
   Export Image is a good function. It can export your circuit diagram in all kinds of image format like .jpg. It is convenient when you need to submit the your report.
 
   + FPGN:
