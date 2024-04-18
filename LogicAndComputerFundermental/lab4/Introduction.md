@@ -29,7 +29,8 @@
   If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your ciucuit diagram into verilog, which can be exported into Vivado to finish our program.
   ![alt text](image-2.png)
 </b>  
-  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment). ![](<屏幕截图 2024-04-18 223107.png>)
+  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).
+![](<image221.png>)
 </b>  
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>  
@@ -67,6 +68,7 @@
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
   + There is an important companent:Spilter(多位选择器). It is vital to your program.
+</b>
   ![alt text](image-13.png)
 </b>  
   + The properties menu is also important. It define all companents in the circuit diagram.
