@@ -30,8 +30,8 @@
   ![alt text](image-2.png)
 </b>  
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).
-![alt text](<image221.png>)
 </b>  
+![alt text](<image221.png>)
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>  
   Click the "Target board" button and choose "FPGA4U".
@@ -67,9 +67,9 @@
   > 2. The arrow is to select the companents or move it.
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
-  + There is an important companent:Spilter(多位选择器). It is vital to your program.
-</b>  
+  + There is an important companent:Spilter(多位选择器). It is vital to your program.  
   ![alt text](image-13.png)
+</b>
   + The properties menu is also important. It define all companents in the circuit diagram.
   ![alt text](image-14.png)
 </b>  
