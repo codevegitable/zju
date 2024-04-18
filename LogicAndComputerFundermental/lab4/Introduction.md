@@ -26,7 +26,7 @@
   + FPGN:
   If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your ciucuit diagram into verilog, which can be exported into Vivado to finish our program.
   ![alt text](image-2.png)</b>
-  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment). ![](<屏幕截图 2024-04-18 223107.png>)
+  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment). ![](<屏幕截图 2024-04-18 223107.png>)</b>
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>
   Click the "Target board" button and choose "FPGA4U".
