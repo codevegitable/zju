@@ -127,9 +127,9 @@
   > It's important to use your "Add Sources" button. You will import your files here.
   When you click the "Add Sources", there will be three options:
   <br />![alt text](image-24.png)<br />
-  > 1.Add or create constraints: when you need to burn on the board, you will need it. It's a file that make your circuit realized on your device.
-  > 2.Add or create design sources: you will import your verilog here.
-  >3.Add or create simulation sources: you will import your simulation files here if you need simulate your circuit.
+  > 1. Add or create constraints: when you need to burn on the board, you will need it. It's a file that make your circuit realized on your device.
+  > 2. Add or create design sources: you will import your verilog here.
+  > 3. Add or create simulation sources: you will import your simulation files here if you need simulate your circuit.
   >   When you import your files you need in the project, then you could click "Finish". Your files will be found in the "Sources".
   <br />![alt text](image-26.png)<br />
   > 
