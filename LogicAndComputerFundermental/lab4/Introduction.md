@@ -93,10 +93,10 @@
 </b>  
   + When you select the circuit companents, it will show these options.
   ![alt text](image-15.png)
-</b>  
+<br />
   + Here is an example diagram and you can try it.
-  ![alt text](lab4.jpg)
-</b>  
+  <br />![alt text](lab4.jpg)
+
 
 ## Chapter 2: Using of Vivado
 ### <font color=Blue>2.1 Download Vivado</font>
