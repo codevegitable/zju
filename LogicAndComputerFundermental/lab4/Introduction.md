@@ -83,16 +83,16 @@
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
 
-  + There is an important companent:Spilter. It is vital to your program.
+  + There is an important component:Spilter. It is vital to your program.
 
-  + There is an important companent:Spilter. It is vital to your program.  
+  + There is an important component:Spilter. It is vital to your program.  
 
   ![alt text](image-13.png)
 </b>
-  + The properties menu is also important. It define all companents in the circuit diagram.
+  + The properties menu is also important. It define all components in the circuit diagram.
   ![alt text](image-14.png)
 </b>  
-  + When you select the circuit companents, it will show these options.
+  + When you select the circuit components, it will show these options.
   ![alt text](image-15.png)
 <br />
   + Here is an example diagram and you can try it.
