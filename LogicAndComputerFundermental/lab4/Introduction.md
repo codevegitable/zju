@@ -1,8 +1,20 @@
 # Lab4 :Method for Using the Logisim and Vivado
-
 **When we learn the Logic and Computer Fundermetal, using of the experiment tools is important. Here are the use of the experiment tools.**
 
-[TOC]
+- [Lab4 :Method for Using the Logisim and Vivado](#lab4-method-for-using-the-logisim-and-vivado)
+  - [Chapter 1: Using of Logisim](#chapter-1-using-of-logisim)
+    - [1.1 Download Logisim Evolution](#11-download-logisim-evolution)
+    - [1.2 Recognize the Interface](#12-recognize-the-interface)
+      - [1.2.1 Menu](#121-menu)
+      - [1.2.2 Making Your Circuit Diagram](#122-making-your-circuit-diagram)
+  - [Chapter 2: Using of Vivado](#chapter-2-using-of-vivado)
+    - [2.1 Download Vivado](#21-download-vivado)
+    - [2.2 Using of Vivado](#22-using-of-vivado)
+      - [2.2.1 Create Your Vivado Project](#221-create-your-vivado-project)
+      - [2.2.2 Kown Your Vivado](#222-kown-your-vivado)
+  - [Chapter 3: Realize Your Circuit](#chapter-3-realize-your-circuit)
+
+
 ## Chapter 1: Using of Logisim
 ### <font color=Blue>1.1 Download Logisim Evolution</font>
   Logisim is a software that can help us make a circuit diagram in a more intuitional way(<a href="https://de.wikipedia.org/wiki/Logisim">Logisim Introduction </a>). We can create our own circuit diagram to simulate the real circuit.
