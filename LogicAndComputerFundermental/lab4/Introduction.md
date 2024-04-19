@@ -26,29 +26,40 @@
   It's important that Logisim Evolution's some functions need Java environment, so you should download and set <a href="https://www.java.com/zh-CN/">Java</a> environment.
 
 ### <font color=Blue>1.2 Recognize the Interface</font>
-  When you open the Logisim Evolution you have downloaded, your interface might be like this:![alt text](image.png)</b>
+  When you open the Logisim Evolution you have downloaded, your interface might be like this:![alt text](image.png)
+</b>  
   If your interface is the same as mine, then you can learn to use it!(Here is only a brief method to use it)
 #### <font color=Red>1.2.1 Menu</font>
   As you can see, there are many options in the menu. What are they used for?
   + File:
   "File" option includes many options that are related to the file operations. For example: save files, create files, open files, etc.
-  ![alt text](image-1.png)</b>
+  ![alt text](image-1.png)
+</b>  
   Export Image is a good function. It can export your circuit diagram in all kinds of image format like .jpg. It is convenient when you need to submit the your report.
 
   + FPGN:
   If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your ciucuit diagram into verilog, which can be exported into Vivado to finish our program.
+
   ![alt text](image-2.png)</b>
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment). ![](<image221.png>)
+=======
+  ![alt text](image-2.png)
+</b>  
+  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).
+</b>  
+![alt text](<image221.png>)
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
-</b>
+</b>  
   Click the "Target board" button and choose "FPGA4U".
-</b>
+</b>  
   Click the "Settins" button and "FPGA Commander Settings" button:![alt text](image-3.png)
+</b>  
   Select the "Verilog" under the "Browse" button if your option is "VHDL".
-</b>
+</b>  
   Then you can click the "Execute" button and "Done" button.
- </b> 
-  Mention that when you can't find the verilog files, you can find it in the log.![alt text](image-4.png)
+</b>  
+  Mention that when you can't find the verilog files, you can find it in the log. ![alt text](image-4.png)
+</b>  
   Then you can find the verilog dir.
 
 #### <font color=Red>1.2.2 Making Your Circuit Diagram</font></b>
@@ -72,14 +83,22 @@
   > 2. The arrow is to select the companents or move it.
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
+
   + There is an important companent:Spilter. It is vital to your program.
+=======
+  + There is an important companent:Spilter(多位选择器). It is vital to your program.  
+
   ![alt text](image-13.png)
+</b>
   + The properties menu is also important. It define all companents in the circuit diagram.
   ![alt text](image-14.png)
+</b>  
   + When you select the circuit companents, it will show these options.
   ![alt text](image-15.png)
+</b>  
   + Here is an example diagram and you can try it.
   ![alt text](lab4.jpg)
+</b>  
 
 ## Chapter 2: Using of Vivado
 ### <font color=Blue>2.1 Download Vivado</font>
@@ -103,6 +122,7 @@
 #### <font color=Red>2.2.2 Kown Your Vivado</font>
   When you enter your Vivado project, you will see the interface as follows(I have export my verilog files):
   ![alt text](image-20.png)
+
 
   > + File:
   > As we all know, "File" is an option to operate our project file.
@@ -142,3 +162,6 @@
   I will provide you simulation file. But in the next labs, you should try write it with verilog by yourself(although I will provide as well). Constraints files is not necessary to learn.
   The simulation file is "[lab4_tb.v](lab4_tb.v)", and constraints file is "[constraints_lab4.xdc](../../../../download/constraints_lab4.xdc)"
   
+=======
+  
+
