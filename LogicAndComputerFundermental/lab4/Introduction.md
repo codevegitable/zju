@@ -106,7 +106,7 @@
   ![alt text](image-16.png)
   Choose Quick Start->Create Project, and you will meet the interface:
   ![alt text](image-17.png)
-  Then what you need to do is easy: just click the "Next" button(remember to set your project name). But you should be careful that there may be something your university requires to set. I will take my university for exmaple again:
+  Then what you need to do is easy: just keep clicking the "Next" button(remember to set your project name). But you should be careful that there may be something your university requires to set. I will take my university for exmaple again:
   ![alt text](image-18.png)
   The target language should be verilog.
   ![alt text](image-19.png)
