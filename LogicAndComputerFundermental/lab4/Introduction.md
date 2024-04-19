@@ -30,7 +30,7 @@
   + FPGN:
   If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your ciucuit diagram into verilog, which can be exported into Vivado to finish our program.
 
-  ![alt text](image-2.png)</b>
+  ![alt text](image-2.png)<br />
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).  
 ![alt text](<image221.png>)
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
@@ -110,29 +110,29 @@
 
   > + File:
   > As we all know, "File" is an option to operate our project file.
-  ![alt text](image-21.png)
+  <br />![alt text](image-21.png)<br />
   > + Tools:
   > "Tools" option is said because "Settings" is in this option. In "Settings" you can edit your preference. I recommand you change your "Text Editor" to VS Code. Click Current Editor->Custom Editor and then input your VS Code path(Reference: <a href="https://blog.csdn.net/weixin_44413191/article/details/107516202?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-107516202-blog-135814994.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3">CSDN</a>).
-  <br />![alt text](image-22.png)
+  <br />![alt text](image-22.png)<br />
   > + Project Manager:
   Your project files and status will be found here.
-  <br />![alt text](image-23.png)
+  <br />![alt text](image-23.png)<br />
   > It's important to use your "Add Sources" button. You will import your files here.
   When you click the "Add Sources", there will be three options:
-  <br />![alt text](image-24.png)
+  <br />![alt text](image-24.png)<br />
   > 1.Add or create constraints: when you need to burn on the board, you will need it. It's a file that make your circuit realized on your device.
   > 2.Add or create design sources: you will import your verilog here.
   >3.Add or create simulation sources: you will import your simulation files here if you need simulate your circuit.
   >   When you import your files you need in the project, then you could click "Finish". Your files will be found in the "Sources".
-  <br />![alt text](image-26.png)
+  <br />![alt text](image-26.png)<br />
   > 
   > + Simulation:
-  <br />![alt text](image-25.png)
+  <br />![alt text](image-25.png)<br />
   When you import your simulation file(tb) in the project, you can click "Run Simulation" to check your circuit.
-  <br />![alt text](image-27.png)
+  <br />![alt text](image-27.png)<br />
   > + Program and Debug
   When you need to burn your circuit on the device, you will need the option.
-  <br />![alt text](image-28.png)
+  <br />![alt text](image-28.png)<br />
   > 1. Open Target: when you link your device with your PC(usually with a USB), you should click it first to connect with your vivado.
   > 2. Generate Bitstream: when you click this button, Vivado will write bitstream for you. You will need the bitstream file to finish your project.
   > 3. Program Device: after connect your device with your Vivado, this option will be active. And then you could export your bitstream file(you don't need to know where it is) in your device.
