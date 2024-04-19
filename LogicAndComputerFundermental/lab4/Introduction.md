@@ -7,7 +7,7 @@
 ### <font color=Blue>1.1 Download Logisim Evolution</font>
   Logisim is a software that can help us make a circuit diagram in a more intuitional way(<a href="https://de.wikipedia.org/wiki/Logisim">Logisim Introduction </a>). We can create our own circuit diagram to simulate the real circuit.
 
-  There are many ways to download Logisim Evolution. You can download it in its website and it`s easy to search it. Here is the download URL:<a herf="https://github.com/logisim-evolution/logisim-evolution">github</a>. Also, you can download it directly from the file I provide.
+  There are many ways to download Logisim Evolution. You can download it in its website and it`s easy to search it. Here is the download URL:<a herf="https://github.com/logisim-evolution/logisim-evolution">github</a>. Also, you can download it directly from the [logisim-evolution-main.zip](logisim-evolution-main.zip) I provide.
 
   When you download the .zip file, unpack it and find the executable program(~.exe). Click it and you will download it.
 
@@ -26,7 +26,7 @@
   + FPGN:
   If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your ciucuit diagram into verilog, which can be exported into Vivado to finish our program.
   ![alt text](image-2.png)</b>
-  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment). ![](<屏幕截图 2024-04-18 223107.png>)
+  When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment). ![](<image221.png>)
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>
   Click the "Target board" button and choose "FPGA4U".
@@ -60,7 +60,7 @@
   > 2. The arrow is to select the companents or move it.
   > 3. The line is to create a line between two companents and create node.
   > 4. The letter "A" is to tag your companents.
-  + There is an important companent:Spilter(多位选择器). It is vital to your program.
+  + There is an important companent:Spilter. It is vital to your program.
   ![alt text](image-13.png)
   + The properties menu is also important. It define all companents in the circuit diagram.
   ![alt text](image-14.png)
@@ -91,4 +91,42 @@
 #### <font color=Red>2.2.2 Kown Your Vivado</font>
   When you enter your Vivado project, you will see the interface as follows(I have export my verilog files):
   ![alt text](image-20.png)
+
+  > + File:
+  > As we all know, "File" is an option to operate our project file.
+  ![alt text](image-21.png)
+  > + Tools:
+  > "Tools" option is said because "Settings" is in this option. In "Settings" you can edit your preference. I recommand you change your "Text Editor" to VS Code. Click Current Editor->Custom Editor and then input your VS Code path(Reference: <a href="https://blog.csdn.net/weixin_44413191/article/details/107516202?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-107516202-blog-135814994.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3">CSDN</a>).
+  ![alt text](image-22.png)
+  > + Project Manager:
+  Your project files and status will be found here.
+  ![alt text](image-23.png)
+  > It's important to use your "Add Sources" button. You will import your files here.
+  When you click the "Add Sources", there will be three options:
+  ![alt text](image-24.png)
+  > 1.Add or create constraints: when you need to burn on the board, you will need it. It's a file that make your circuit realized on your device.
+  > 2.Add or create design sources: you will import your verilog here.
+  >3.Add or create simulation sources: you will import your simulation files here if you need simulate your circuit.
+  ></b> 
+  >   When you import your files you need in the project, then you could click "Finish". Your files will be found in the "Sources".
+  ![alt text](image-26.png)
+  > 
+  > + Simulation:
+  ![alt text](image-25.png)
+  When you import your simulation file(tb) in the project, you can click "Run Simulation" to check your circuit.
+  ![alt text](image-27.png)
+  > + Program and Debug
+  When you need to burn your circuit on the device, you will need the option.
+  ![alt text](image-28.png)
+  > 1. Open Target: when you link your device with your PC(usually with a USB), you should click it first to connect with your vivado.
+  > 2. Generate Bitstream: when you click this button, Vivado will write bitstream for you. You will need the bitstream file to finish your project.
+  > 3. Program Device: after connect your device with your Vivado, this option will be active. And then you could export your bitstream file(you don't need to know where it is) in your device.
+  Finally you could see your result.
+  ![alt text](776f62d6d18cc4fb247dd451cbb1511.jpg)
+
+## Chapter 3: Realize Your Circuit
+  I have give you the circuit diagram before. So you can try it.
+  Consider you may not have device to finish your work, you can just simulate it and post your simulation result image.
+  I will provide you simulation file. But in the next labs, you should try write it with verilog by yourself(although I will provide as well). Constraints files is not necessary to learn.
+  The simulation file is "[lab4_tb.v](lab4_tb.v)", and constraints file is "[constraints_lab4.xdc](../../../../download/constraints_lab4.xdc)"
   
