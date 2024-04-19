@@ -55,7 +55,7 @@
   When we need to use a circuit for many times, it will be tiring to recreate them one by one. So adding multiplex circuits is important.
 
   For the former diagram, we could use it as follows:
-  > + Click the project name (in the picture"lab5") with the right button of your mouse and click "Add Circuit", then create a new circuit. Mention that the name can not be same as your circuits name that exit :
+  > + Click the project name (in the picture"lab5") with the right button of your mouse and click "Add Circuit", then create a new circuit. Mention that the name can not be same as your circuits name that exist :
   <br />![alt text](image-1.png) <br />
   > + Click the circuit that is created with the right button of your mouse to set it the main circuit.
   <br />![alt text](image-2.png)<br />
