@@ -21,7 +21,7 @@
 ### <font color=Blue>1.1 Download Logisim Evolution</font>
   Logisim is a software that can help us make a circuit diagram in a more intuitional way(<a href="https://de.wikipedia.org/wiki/Logisim">Logisim Introduction </a>). We can create our own circuit diagram to simulate the real circuit.
 
-  There are many ways to download Logisim Evolution. You can download it in its website and it`s easy to search it. Here is the download URL:<a herf="https://github.com/logisim-evolution/logisim-evolution">github</a>. Also, you can download it directly from the [logisim-evolution-main.zip](logisim-evolution-main.zip) I provide.
+  There are many ways to download Logisim Evolution. You can download it in its website and it`s easy to search it. Here is the download URL:<a href="https://github.com/logisim-evolution/logisim-evolution">github</a>. Also, you can download it directly from the [logisim-evolution-main.zip](logisim-evolution-main.zip) I provide.
 
   When you download the .zip file, unpack it and find the executable program(~.exe). Click it and you will download it.
 
