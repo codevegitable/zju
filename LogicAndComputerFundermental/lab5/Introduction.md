@@ -68,4 +68,4 @@
   
   Rename your circuit name <u>"D_74LS138"</u> and finish the circuit(I have given in this markdown). Create a new project in Vivado, import the code from D_74LS138/verilog/circuit/ and D_74LS138/verilog/gates/ directories into the project, and simulate the generated Verilog code using [simulation files](D_74LS138_tb.v).
 
-  **If you forget the process, please look up in lab4.**
+  **If you forget the process, please look up in [lab4](LogicAndComputerFundermental/lab4/Introduction.md).**
