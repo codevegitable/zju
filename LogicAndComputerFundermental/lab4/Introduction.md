@@ -32,7 +32,7 @@
 
   ![alt text](image-2.png)<br />
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).  
-![alt text](<image221.png>)
+![alt text](<image221.png>)<br />
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>  
   Click the "Target board" button and choose "FPGA4U".
@@ -70,7 +70,7 @@
   > 4. The letter "A" is to tag your companents.
 
   + There is an important companent:Spilter. It is vital to your program.
-=======
+
   + There is an important companent:Spilter. It is vital to your program.  
 
   ![alt text](image-13.png)
