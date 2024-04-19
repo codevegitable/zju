@@ -14,7 +14,9 @@
   It's important that Logisim Evolution's some functions need Java environment, so you should download and set <a href="https://www.java.com/zh-CN/">Java</a> environment.
 
 ### <font color=Blue>1.2 Recognize the Interface</font>
-  When you open the Logisim Evolution you have downloaded, your interface might be like this:![alt text](image.png)
+
+  When you open the Logisim Evolution you have downloaded, your interface might be like this:
+  ![alt text](image.png)
 </b>  
   If your interface is the same as mine, then you can learn to use it!(Here is only a brief method to use it)
 #### <font color=Red>1.2.1 Menu</font>
@@ -109,48 +111,37 @@
 
 #### <font color=Red>2.2.2 Kown Your Vivado</font>
   When you enter your Vivado project, you will see the interface as follows(I have export my verilog files):
-  </b>
   ![alt text](image-20.png)
-
 
   > + File:
   > As we all know, "File" is an option to operate our project file.
-</b>
   ![alt text](image-21.png)
   > + Tools:
   > "Tools" option is said because "Settings" is in this option. In "Settings" you can edit your preference. I recommand you change your "Text Editor" to VS Code. Click Current Editor->Custom Editor and then input your VS Code path(Reference: <a href="https://blog.csdn.net/weixin_44413191/article/details/107516202?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-107516202-blog-135814994.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3">CSDN</a>).
-</b>
   ![alt text](image-22.png)
   > + Project Manager:
   Your project files and status will be found here.
   ![alt text](image-23.png)
   > It's important to use your "Add Sources" button. You will import your files here.
   When you click the "Add Sources", there will be three options:
-> </b>
   ![alt text](image-24.png)
   > 1.Add or create constraints: when you need to burn on the board, you will need it. It's a file that make your circuit realized on your device.
   > 2.Add or create design sources: you will import your verilog here.
   >3.Add or create simulation sources: you will import your simulation files here if you need simulate your circuit.
-  ></b> 
   >   When you import your files you need in the project, then you could click "Finish". Your files will be found in the "Sources".
->     </b>
   ![alt text](image-26.png)
   > 
   > + Simulation:
-> </b>
   ![alt text](image-25.png)
   When you import your simulation file(tb) in the project, you can click "Run Simulation" to check your circuit.
-</b>
   ![alt text](image-27.png)
   > + Program and Debug
   When you need to burn your circuit on the device, you will need the option.
-</b>
   ![alt text](image-28.png)
   > 1. Open Target: when you link your device with your PC(usually with a USB), you should click it first to connect with your vivado.
   > 2. Generate Bitstream: when you click this button, Vivado will write bitstream for you. You will need the bitstream file to finish your project.
   > 3. Program Device: after connect your device with your Vivado, this option will be active. And then you could export your bitstream file(you don't need to know where it is) in your device.
   Finally you could see your result.
-</b>
   ![alt text](776f62d6d18cc4fb247dd451cbb1511.jpg)
 
 ## Chapter 3: Realize Your Circuit
