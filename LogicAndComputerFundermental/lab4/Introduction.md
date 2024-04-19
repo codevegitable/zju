@@ -143,7 +143,7 @@
   I have give you the circuit diagram before. So you can try it.
   Consider you may not have device to finish your work, you can just simulate it and post your simulation result image.
   I will provide you simulation file. But in the next labs, you should try write it with verilog by yourself(although I will provide as well). Constraints files is not necessary to learn.
-  The simulation file is "[lab4_tb.v](lab4_tb.v)", and constraints file is "[constraints_lab4.xdc](../../../../download/constraints_lab4.xdc)"
+  The simulation file is "[lab4_tb.v](lab4_tb.v)", and constraints file is "[constraints_lab4.xdc](constraints_lab4.xdc)"
   
 =======
   
