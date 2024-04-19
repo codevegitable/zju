@@ -42,7 +42,7 @@
   Export Image is a good function. It can export your circuit diagram in all kinds of image format like .jpg. It is convenient when you need to submit the your report.
 
   + FPGN:
-  If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your ciucuit diagram into verilog, which can be exported into Vivado to finish our program.
+  If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your circuit diagram into verilog, which can be exported into Vivado to finish our program.
 
   ![alt text](image-2.png)<br />
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).  
