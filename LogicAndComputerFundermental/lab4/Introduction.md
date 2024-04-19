@@ -7,7 +7,6 @@
     - [1.1 Download Logisim Evolution](#11-download-logisim-evolution)
     - [1.2 Recognize the Interface](#12-recognize-the-interface)
       - [1.2.1 Menu](#121-menu)
-- [When you finish your circuit diagram, please click the "Synthesize \& Download"(It needs Java environment). ](#when-you-finish-your-circuit-diagram-please-click-the-synthesize--downloadit-needs-java-environment-)
       - [1.2.2 Making Your Circuit Diagram](#122-making-your-circuit-diagram)
   - [Chapter 2: Using of Vivado](#chapter-2-using-of-vivado)
     - [2.1 Download Vivado](#21-download-vivado)
