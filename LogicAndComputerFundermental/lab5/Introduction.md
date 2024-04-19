@@ -1,6 +1,17 @@
 # Lab5 :Decorder(译码器)
 **<a href="https://en.wikipedia.org/wiki/Decoder">Decorder</a> is a combinational logic circuit. It can transform a binary input signal into a specific output. We will realize a binary decorder in the experiment.**
 
+- [Lab5 :Decorder(译码器)](#lab5-decorder译码器)
+  - [Chapter 1: Binary Decorder](#chapter-1-binary-decorder)
+    - [1.1 Theory](#11-theory)
+    - [1.2 74LS138 Core](#12-74ls138-core)
+      - [1.2.1 Enable Signal](#121-enable-signal)
+      - [1.2.2 Address Signal](#122-address-signal)
+  - [Chapter 2: Make Circuit Diagram](#chapter-2-make-circuit-diagram)
+    - [2.1 What We Need](#21-what-we-need)
+      - [2.1.1 Splitter](#211-splitter)
+      - [2.1.2 DIY Your Own Companents](#212-diy-your-own-companents)
+    - [2.2 Realize 74LS138](#22-realize-74ls138)
 
 
 ## Chapter 1: Binary Decorder
