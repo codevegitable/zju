@@ -12,6 +12,8 @@
       - [2.1.1 Splitter](#211-splitter)
       - [2.1.2 DIY Your Own Companents](#212-diy-your-own-companents)
     - [2.2 Realize 74LS138](#22-realize-74ls138)
+- [Chapter 3: Using 74LS138 to Realize Lab4](#chapter-3-using-74ls138-to-realize-lab4)
+
 
 
 ## Chapter 1: Binary Decorder
@@ -69,3 +71,20 @@
   Rename your circuit name <u>"D_74LS138"</u> and finish the circuit(I have given in this markdown). Create a new project in Vivado, import the code from D_74LS138/verilog/circuit/ and D_74LS138/verilog/gates/ directories into the project, and simulate the generated Verilog code using [simulation files](D_74LS138_tb.v).
 
   **If you forget the process, please look up in lab4.**
+
+# Chapter 3: Using 74LS138 to Realize Lab4
+  We have realize the 74LS138 and know it is a decorder, so what can it realize?
+
+  In the lab4, we have realize the circuit, which can control the light to be turned on when odd number of switches are open. it is just like the 3 - 8 decorder: input 3 signals and there will be a result.
+
+  <br />![alt text](logisim_example.png)<br />
+
+  We can analyse the circuit: I0, I1, I2 are three inputs. Only when odd number of the switch are opened can the light be turned on. So the logic expression is easy:
+  
+  > **P = I0$\overline{\text{I1I2}}$ + I1$\overline{\text{I0I2}}$ + I2$\overline{\text{I0I1}}$ + I0I1I2**
+
+  Because 74LS138 uses low level signal as valid output, the circuit diagram will be(it is important to know the Gray Code):
+
+  <br />![alt text](image-4.png)<br />
+
+  After simulating, the result is right.
