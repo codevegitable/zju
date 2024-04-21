@@ -54,16 +54,16 @@
 
   > + Input Ports:
 >   
-    >   + BTN[1:0]: Two buttons in the same row of the button array.
-    >   + SW[7:0]: Eight switches on the right half of the board.
+>   + BTN[1:0]: Two buttons in the same row of the button array.
+>   + SW[7:0]: Eight switches on the right half of the board.
 > 
   > + Output Ports:
 > 
-    >   + SEGMENT[7:0]: Seven-segment displays (including the decimal point).
-        >   + SEGMENT[7] is connected to 'p'.
-        >   + SEGMENT[0]~SEGMENT[6] are respectively connected to 'a', 'b', 'c', 'd', 'e', 'f', 'g'.
-    >   + AN[3:0]: Used to directly control the illumination of the four seven-segment displays.
-    >   + BTN_X is constantly set to 0, selecting a row in the button array.
+>   + SEGMENT[7:0]: Seven-segment displays (including the decimal point).
+>     + SEGMENT[7] is connected to 'p'.
+>     + SEGMENT[0]~SEGMENT[6] are respectively connected to 'a', 'b', 'c', 'd', 'e', 'f', 'g'.
+>   + AN[3:0]: Used to directly control the illumination of the four seven-segment displays.
+>   + BTN_X is constantly set to 0, selecting a row in the button array.
   
   Here is the diagram:
   <br />![alt text](image/updated_disp_num.png)<br />
