@@ -52,7 +52,7 @@
     //Your code.
   endmodule
   ```
-  Of course I will give you the [text](MyMC14495.v) in the file.
+  Of course I will give you the [verilog code](MyMC14495.v) in the file.
 
   After realize the circuit diagram, you can simulate it. Here is the [simulation file](MyMC14495_tb.v).
 
