@@ -81,7 +81,7 @@
 
   We can analyse the circuit: I0, I1, I2 are three inputs. Only when odd number of the switch are opened can the light be turned on. So the logic expression is easy:
   
-  > **P = I0---I1I2--- + I1---I0I2--- + I2---I0I1--- + I0I1I2**
+  > **P = I0$\overline{\text{I1I2}}$ + I1$\overline{\text{I0I2}}$ + I2$\overline{\text{I0I1}}$ + I0I1I2**
 
   Because 74LS138 uses low level signal as valid output, the circuit diagram will be(it is important to know the Gray Code):
 
