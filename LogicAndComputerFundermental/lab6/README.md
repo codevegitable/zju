@@ -1,6 +1,6 @@
 # Lab6
 
-The Main Content: [Introduction.md](Introduction.v)
+The Main Content: [Introduction.md](Introduction.md)
 
 The MyMC14495 Verilog Code: [MyMC14495.v](MyMC14495.v)
 
