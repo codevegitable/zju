@@ -85,6 +85,8 @@
 
   Because 74LS138 uses low level signal as valid output, the circuit diagram will be(it is important to know the Gray Code):
 
-  <br />![alt text](image-4.png)<br />
+  <br />![alt text](image-5.png)<br />
+  (Power and ground components are in "Wiring" option)
+  <br />![alt text](image-6.png)<br />
 
   After simulating, the result is right.
