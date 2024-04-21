@@ -1,6 +1,13 @@
 # Lab 6 :Seven-segment Digital Tube
 **Seven-segment digital tube is common in our life. Lab6 will show you how it works.**
 
+- [Lab 6 :Seven-segment Digital Tube](#lab-6-seven-segment-digital-tube)
+  - [Chapter 1: Seven-segment Digital Tube](#chapter-1-seven-segment-digital-tube)
+  - [Chapter 2: MC14495](#chapter-2-mc14495)
+    - [2.1 Introduction](#21-introduction)
+    - [2.2 Realization](#22-realization)
+  - [Chapter 3: Using of MyMC14495](#chapter-3-using-of-mymc14495)
+
 
 ## Chapter 1: Seven-segment Digital Tube
 
