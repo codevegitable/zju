@@ -26,9 +26,9 @@
 
 ### <font color=blue>1.2 74LS138 Core</font>
   74LS138 core is a kind of 3 - 8 decorder. The main enable inputs are G, G2A and G2B; the inputs are A, B and C (A is the lowest bit of the address signal, the first number); the outputs are Y0 ~ Y7. Here is the diagram:
-  <br />![alt text](D_74LS138_sch.png)<br />
+  <br />![alt text](image/D_74LS138_sch.png)<br />
   The truth table is here, too.
-  <br />![alt text](truth_table.png)<br />
+  <br />![alt text](image/truth_table.png)<br />
 
 #### <font color=red>1.2.1 Enable Signal</font>
   The 74LS138 has three enable signals: G, G2A, and G2B. Among them, the G signal is the <u>primary enable signal</u> with high-level effectiveness. When it is at a <u>low level</u>, all output signals are in the <u>inactive state (high level)</u>.
@@ -51,18 +51,18 @@
   > + Bit 0/1/...: These options are used to select which port each split bit will go to.
 
   By adjusting these properties, multiple-line signals can be effectively handled, ensuring the correctness and feasibility of circuit design.
-  <br />![alt text](image.png)<br />
+  <br />![alt text](image/image.png)<br />
 
 #### <font color=red>2.1.2 DIY Your Own Companents</font>
   When we need to use a circuit for many times, it will be tiring to recreate them one by one. So adding multiplex circuits is important.
 
   For the former diagram, we could use it as follows:
   > + Click the project name (in the picture"lab5") with the right button of your mouse and click "Add Circuit", then create a new circuit. Mention that the name can not be same as your circuits name that exist :
-  <br />![alt text](image-1.png) <br />
+  <br />![alt text](image/image-1.png) <br />
   > + Click the circuit that is created with the right button of your mouse to set it the main circuit.
-  <br />![alt text](image-2.png)<br />
+  <br />![alt text](image/image-2.png)<br />
   > + Click the circuit that is created before, then you can add it to your new circuit.
-  <br />![alt text](image-3.png)<br />
+  <br />![alt text](image/image-3.png)<br />
 
 ### <font color=blue>2.2 Realize 74LS138</font>
 
@@ -77,7 +77,7 @@
 
   In the lab4, we have realize the circuit, which can control the light to be turned on when odd number of switches are open. it is just like the 3 - 8 decorder: input 3 signals and there will be a result.
 
-  <br />![alt text](logisim_example.png)<br />
+  <br />![alt text](image/logisim_example.png)<br />
 
   We can analyse the circuit: I0, I1, I2 are three inputs. Only when odd number of the switch are opened can the light be turned on. So the logic expression is easy:
   
@@ -85,8 +85,8 @@
 
   Because 74LS138 uses low level signal as valid output, the circuit diagram will be(it is important to know the Gray Code):
 
-  <br />![alt text](image-5.png)<br />
+  <br />![alt text](image/image-5.png)<br />
   (Power and ground components are in "Wiring" option)
-  <br />![alt text](image-6.png)<br />
+  <br />![alt text](image/image-6.png)<br />
 
   After simulating, the result is right.
