@@ -29,10 +29,10 @@
   If we want to realize the circuit, we need to know the boolean expression. We can list the truth table to help us realize it:
   <br />![alt text](image/truth_table.png)<br />
 
-  > e = $\overline{D3D2D1}$D0 + $\overline{D3D2}$D1D0 + $\overline{D3D1D0}$D2 + $\overline{D3}$D2D1D0 + D3$\overline{D2D1}$D0
+  > e = $\overline{D3D2D1}$ D0 + $\overline{D3D2}$ D1D0 + $\overline{D3D1D0}$ D2 + $\overline{D3}$ D2D1D0 + D3 $\overline{D2D1}$ D0
 
   Or you can use Karnaugh map to simplify:
-  > e = $\overline{D3}$D0 + $\overline{D3D1}$D2 + $\overline{D2D1}$D0
+  > e = $\overline{D3}$ D0 + $\overline{D3D1}$ D2 + $\overline{D2D1}$ D0
 
 ### 2.2 Realization
   Know we know the theroy of the circuit, we can realize it in our circuit diagram. Here is the diagram:
@@ -76,7 +76,7 @@
   <br />![alt text](image/updated_disp_num.png)<br />
 
   If you want to realize it in verilog, here is the module and ports definations:
-  '''
+  ```
   module DispNum{
     input wire [1:0] BTN,
     input wire [7:0] SW,
@@ -92,7 +92,7 @@
         //fill the next content
     }
   endmodule
-  '''
+  ```
 
   Also, the [verilog code](DispNum.v) is here.
 
