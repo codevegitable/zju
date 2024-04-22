@@ -22,10 +22,10 @@
 ### 2.1 Introduction
   The combination component we want to implement has the following ports:
   <br />![alt text](image/my_mc14495.png)<br />
-  > D0 ~ D3: 4 bit width input
-  > LE: enable signal(low level signal is valid)
-  > point: whether point is lighted(high level signal is valid)
-  > a ~ g, p: output signal, low level signal is valid.
+  > D0 ~ D3: 4 bit width input <br />
+  > LE: enable signal(low level signal is valid) <br />
+  > point: whether point is lighted(high level signal is valid) <br />
+  > a ~ g, p: output signal, low level signal is valid. <br />
 
   If we want to realize the circuit, we need to know the boolean expression. We can list the truth table to help us realize it:
   <br />![alt text](image/truth_table.png)<br />
