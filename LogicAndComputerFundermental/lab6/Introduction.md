@@ -7,6 +7,7 @@
     - [2.1 Introduction](#21-introduction)
     - [2.2 Realization](#22-realization)
   - [Chapter 3: Using of MyMC14495](#chapter-3-using-of-mymc14495)
+  - [Chapter 3: Thinking Other Outputs](#chapter-3-thinking-other-outputs)
 
 
 ## Chapter 1: Seven-segment Digital Tube
@@ -52,7 +53,7 @@
     //Your code.
   endmodule
   ```
-  Of course I will give you the [verilog code](MyMC14495.v) in the file.
+  Of course I will give you the [text](MyMC14495.v) in the file.
 
   After realize the circuit diagram, you can simulate it. Here is the [simulation file](MyMC14495_tb.v).
 
@@ -99,3 +100,20 @@
   If your simulation result is right, here is the [constraints file](constraints_lab6.xdc).
 
   <br />![alt text](image/result.jpg)<br />
+
+## Chapter 3: Thinking Other Outputs
+  
+  We know the theroy of the Seven-segment digital tube, so we can realize other functions like print "I Love You".
+  <br />![alt text](image/iloveu_decoder.jpg)<br />
+
+  To achieve the function, you need to finish the truth table and boolean expression. Here are some input boolean expressions. If you want to achieve the whole function, you need to finish all inputs.
+  <br />![alt text](image/image.png)<br />
+
+  > + a = ${\overline{D0D1D2}}$ + ${\overline{D2D1}}$ D0 + ${\overline{D2D0}}$ D1 + ${\overline{D2}}$ D1D0 + D2 ${\overline{D1}}$ D0 + D2D1D0
+  >   +   a = ${\overline{D0}}$ + D2
+  > + b = ${\overline{D2D1D0}}$ + ${\overline{D2D1}}$ D0 + ${\overline{D2D0}}$ D1 + ${\overline{D2}}$ D1D0 + D2 ${\overline{D1D0}}$
+  >   +   b = ${\overline{D0}}$ + ${\overline{D1D2}}$
+  > + c = ${\overline{D2D1D0}}$ + ${\overline{D2D1}}$ D0 + D2 ${\overline{D1D0}}$
+  >   +   c = ${\overline{D2D1}}$ + ${\overline{D1D0}}$
+  > + g = ${\overline{D1D0}}$ + D2D1 + D1D0
+  >   +   g = ${\overline{D2D1D0}}$ + ${\overline{D2D1}}$ D0 + ${\overline{D2D0}}$ D1 + D2D1 ${\overline{D0}}$ + D2D1D0
