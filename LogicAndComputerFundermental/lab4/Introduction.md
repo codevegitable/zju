@@ -44,17 +44,17 @@
   <br><br>![alt text](image/image-2.png)<br><br>
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).  
   <br><br>![alt text](image/image221.png)<br><br>
-  Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
+  Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example.
 </b>  
   Click the "Target board" button and choose "FPGA4U".
 </b>  
-  Click the "Settins" button and "FPGA Commander Settings" button:![alt text](image/image-3.png)
+  Click the "Settins" button and "FPGA Commander Settings" button:<br><br>![alt text](image/image-3.png)<br><br>
 </b>  
   Select the "Verilog" under the "Browse" button if your option is "VHDL".
 </b>  
   Then you can click the "Execute" button and "Done" button.
 </b>  
-  Mention that when you can't find the verilog files, you can find it in the log. ![alt text](image/image-4.png)
+  Mention that when you can't find the verilog files, you can find it in the log. <br><br>![alt text](image/image-4.png)<br><br>
 </b>  
   Then you can find the verilog dir.
 
