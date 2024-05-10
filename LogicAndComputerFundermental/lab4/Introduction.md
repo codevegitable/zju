@@ -27,23 +27,23 @@
 ### <font color=Blue>1.2 Recognize the Interface</font>
 
   When you open the Logisim Evolution you have downloaded, your interface might be like this:
-  <br />![alt text](image/image.png)<br />
+  <br><br>![alt text](image/image.png)<br><br>
   
   If your interface is the same as mine, then you can learn to use it!(Here is only a brief method to use it)
 #### <font color=Red>1.2.1 Menu</font>
   As you can see, there are many options in the menu. What are they used for?
   + File:
   "File" option includes many options that are related to the file operations. For example: save files, create files, open files, etc.
-  <br />![alt text](image/image-1.png)<br />
+  <br><br>![alt text](image/image-1.png)<br><br>
 
   Export Image is a good function. It can export your circuit diagram in all kinds of image format like .jpg. It is convenient when you need to submit the your report.
 
   + FPGN:
   If you have learned the courses about electrinic information, you may konw what it means(If you don't know, it doesn't matter because I don't know, too). It can translate your circuit diagram into verilog, which can be exported into Vivado to finish our program.
 
-  ![alt text](image/image-2.png)<br />
+  <br><br>![alt text](image/image-2.png)<br><br>
   When you finish your circuit diagram, please click the "Synthesize & Download"(It needs Java environment).  
-  ![alt text](image/image221.png)<br />
+  <br><br>![alt text](image/image221.png)<br><br>
   Before you click the "Execute" button, you should reset it as your university's requirement. I will take Zhejiang University's requirement for example(I'm major in CS).
 </b>  
   Click the "Target board" button and choose "FPGA4U".
@@ -81,13 +81,13 @@
   > 4. The letter "A" is to tag your companents.
 
   + There is an important component:Spilter. It is vital to your program. 
-  <br />![alt text](image/image-13.png)<br />
+  <br><br>![alt text](image/image-13.png)<br><br>
   + The properties menu is also important. It define all components in the circuit diagram.
-  <br />![alt text](image/image-14.png)<br />
+  <br><br>![alt text](image/image-14.png)<br><br>
   + When you select the circuit components, it will show these options.
-  <br />![alt text](image/image-15.png)<br />
+  <br><br>![alt text](image/image-15.png)<br><br>
   + Here is an example diagram and you can try it.
-  <br />![alt text](image/lab4.jpg)<br />
+  <br><br>![alt text](image/lab4.jpg)<br><br>
 
 
 ## Chapter 2: Using of Vivado
@@ -100,49 +100,49 @@
 #### <font color=Red>2.2.1 Create Your Vivado Project</font>
   When you finish your Vivado downloading, you can click the Vivado to use it.
   In the interface, you will see the options like this:
-  ![alt text](image/image-16.png)
+  <br><br>![alt text](image/image-16.png)<br><br>
   Choose Quick Start->Create Project, and you will meet the interface:
-  ![alt text](image/image-17.png)
+  <br><br>![alt text](image/image-17.png)<br><br>
   Then what you need to do is easy: just keep clicking the "Next" button(remember to set your project name). But you should be careful that there may be something your university requires to set. I will take my university for exmaple again:
-  ![alt text](image/image-18.png)
+  <br><br>![alt text](image/image-18.png)<br><br>
   The target language should be verilog.
-  ![alt text](image/image-19.png)
+  <br><br>![alt text](image/image-19.png)<br><br>
   Search "xc7k160tffg676-2L" and select it and then you can proceed to click "Next".
 
 #### <font color=Red>2.2.2 Kown Your Vivado</font>
   When you enter your Vivado project, you will see the interface as follows(I have export my verilog files):
-  ![alt text](image/image-20.png)
+  <br><br>![alt text](image/image-20.png)<br><br>
 
   > + File:
   > As we all know, "File" is an option to operate our project file.
-  <br />![alt text](image/image-21.png)<br />
+  <br /><br>![alt text](image/image-21.png)<br /><br>
   > + Tools:
   > "Tools" option is said because "Settings" is in this option. In "Settings" you can edit your preference. I recommand you change your "Text Editor" to VS Code. Click Current Editor->Custom Editor and then input your VS Code path(Reference: <a href="https://blog.csdn.net/weixin_44413191/article/details/107516202?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-107516202-blog-135814994.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3">CSDN</a>).
-  <br />![alt text](image/image-22.png)<br />
+  <br /><br>![alt text](image/image-22.png)<br /><br>
   > + Project Manager:
   Your project files and status will be found here.
-  <br />![alt text](image/image-23.png)<br />
+  <br /><br>![alt text](image/image-23.png)<br /><br>
   > It's important to use your "Add Sources" button. You will import your files here.
   When you click the "Add Sources", there will be three options:
-  <br />![alt text](image/image-24.png)<br />
+  <br /><br>![alt text](image/image-24.png)<br /><br>
   > 1. Add or create constraints: when you need to burn on the board, you will need it. It's a file that make your circuit realized on your device.
   > 2. Add or create design sources: you will import your verilog here.
   > 3. Add or create simulation sources: you will import your simulation files here if you need simulate your circuit.
   >   When you import your files you need in the project, then you could click "Finish". Your files will be found in the "Sources".
-  <br />![alt text](image/image-26.png)<br />
+  <br /><br>![alt text](image/image-26.png)<br /><br>
   > 
   > + Simulation:
-  <br />![alt text](image/image-25.png)<br />
+  <br /><br>![alt text](image/image-25.png)<br /><br>
   When you import your simulation file(tb) in the project, you can click "Run Simulation" to check your circuit.
-  <br />![alt text](image/image-27.png)<br />
+  <br /><br>![alt text](image/image-27.png)<br /><br>
   > + Program and Debug
   When you need to burn your circuit on the device, you will need the option.
-  <br />![alt text](image/image-28.png)<br />
+  <br /><br>![alt text](image/image-28.png)<br /><br>
   > 1. Open Target: when you link your device with your PC(usually with a USB), you should click it first to connect with your vivado.
   > 2. Generate Bitstream: when you click this button, Vivado will write bitstream for you. You will need the bitstream file to finish your project.
   > 3. Program Device: after connect your device with your Vivado, this option will be active. And then you could export your bitstream file(you don't need to know where it is) in your device.
   Finally you could see your result.
-  <br /> ![alt text](image/776f62d6d18cc4fb247dd451cbb1511.jpg)
+  <br /><br> ![alt text](image/776f62d6d18cc4fb247dd451cbb1511.jpg)<br><br>
 
 ## Chapter 3: Realize Your Circuit
   I have give you the circuit diagram before. So you can try it.
