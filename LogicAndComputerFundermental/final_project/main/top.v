@@ -3,7 +3,7 @@
 module top(
     input clk,  //100MHz的时钟
     input [7:0] SW, //开关
-    input [4:0] btn,
+    input [3:0] btn,
     output btn_x,
     output vga_hs, vga_vs,  //vga接口信号位置（不用管）
     output [3:0] vga_red, vga_green, vga_blue   //vga的RGB信号（不用管）
@@ -23,8 +23,7 @@ reg [143:0] position = 0;   //屏幕上正在下落的方块分布信息（其�
 //初始化
 wire [11:0] shape;
 wire button_begin;
-pbdebounce pbd(.clk(clk), .button(btn[4]), .pbreg(button_begin));
-game_begin begingame1(.clk(clk), .begin_button(button_begin), .SW(SW[0]), .shape(shape));
+game_begin begingame1(.clk(clk), .SW(SW[0]), .shape(shape));
 
 initial begin   
     occupy=0;
@@ -122,6 +121,7 @@ always @(posedge clk) begin
         if(~right & ~isrightb & !(position_right & occupy)) begin
             position<=position_right;
         end
+
     end
 end
 
@@ -150,7 +150,7 @@ assign p=py*12+px;
 always @(posedge clk)begin
     if(x>=80 && x<560) begin
         if(position[p]==1||occupy[p]==1)begin   //被方块占据
-            color<=12'hfff; //非黑
+            color<=shape; //非黑
         end else begin
             color<=12'h000; //即白
         end
