@@ -32,7 +32,7 @@ end
 wire clk_div;
 clkdiv_10ms clk2(.clk(clk), .rst(0), .div_res(clk_div));
 
-always @(posedge clk_div) begin
+always @(posedge clk) begin
     counter[0] <= counter[0] + 1;
     counter[1] <= counter[1] + 1;
     counter[2] <= counter[2] + 1;
