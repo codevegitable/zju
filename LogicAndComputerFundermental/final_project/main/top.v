@@ -47,6 +47,7 @@ assign position_right=position<<1;
 
 //平移、旋转按键的去抖动
 wire left, right, turn_left, turn_right;
+wire [143:0]rotate_position;
 pbdebounce debounce0(.clk(clk), .button(btn[0]), .pbreg(turn_right));
 pbdebounce debounce1(.clk(clk), .button(btn[1]), .pbreg(right));
 pbdebounce debounce2(.clk(clk), .button(btn[2]), .pbreg(left));
@@ -121,7 +122,6 @@ always @(posedge clk) begin
         if(~right & ~isrightb & !(position_right & occupy)) begin
             position<=position_right;
         end
-
     end
 end
 
@@ -150,7 +150,7 @@ assign p=py*12+px;
 always @(posedge clk)begin
     if(x>=80 && x<560) begin
         if(position[p]==1||occupy[p]==1)begin   //被方块占据
-            color<=shape; //非黑
+            color<=shape; //不同方块颜色不同
         end else begin
             color<=12'h000; //即白
         end
@@ -165,7 +165,6 @@ vgac v0(
     .r(vga_red), .g(vga_green), .b(vga_blue), .hs(vga_hs), .vs(vga_vs), .col_addr(x), .row_addr(y)
 );
 
-//这些是蜂鸣器发do音3s的代码
 //reg [31:0] counter;
 //initial counter=1;
 //always @(posedge clk) begin
@@ -182,5 +181,13 @@ vgac v0(
 //buzzer_driver(
 //    .clk(clk), .note(note), .beep(buzzer)
 //);
+
+//发出7个音高
+wire note;
+create_note note1(.clk(clk), .note(note));
+
+buzzer_driver buzzer1(
+    .clk(clk), .note(note), .begin_button(SW[0]), .beep(buzzer)
+);
 
 endmodule
