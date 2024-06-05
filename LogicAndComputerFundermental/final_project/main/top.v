@@ -3,7 +3,7 @@
 module top(
     input clk,  //100MHz的时钟
     input [7:0] SW, //开关
-    input [3:0] btn,
+    input [4:0] btn,
     output btn_x,
     output vga_hs, vga_vs,  //vga接口信号位置（不用管）
     output [3:0] vga_red, vga_green, vga_blue   //vga的RGB信号（不用管）
@@ -19,11 +19,19 @@ end
 
 
 reg [143:0] occupy;     //已经下落的方块分布信息
-reg [143:0] position;   //屏幕上正在下落的方块分布信息（其实只有一坨方块，有点浪费空间
+reg [143:0] position = 0;   //屏幕上正在下落的方块分布信息（其实只有一坨方块，有点浪费空间
 //初始化
+wire [11:0] shape;
+wire button_begin;
+pbdebounce pbd(.clk(clk), .button(btn[4]), .pbreg(button_begin));
+game_begin begingame1(.clk(clk), .begin_button(button_begin), .SW(SW[0]), .shape(shape));
+
 initial begin   
     occupy=0;
-    position={{128{1'b0}},1'b1,{12{1'b0}},1'b1,{2{1'b0}}}; //生成方块
+    position[6:4]=shape[2:0];
+    position[18:16]=shape[5:3];
+    position[30:28]=shape[8:6];
+    position[42:40]=shape[11:9]; //生成方块
 end
 
 //block_clk：方块下落的每帧时长
