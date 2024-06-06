@@ -21,12 +21,22 @@ end
 
 reg [143:0] occupy;     //蟾ｲ扈丈ｸ玖誠�?��婿蝮怜�蟶�ｿ｡�??
 reg [143:0] position;   //螻丞ｹ穂ｸ頑ｭ｣蝨ｨ荳玖誠�?��婿蝮怜�蟶�ｿ｡諱ｯ�亥�螳槫宵譛我�?蝮ｨ譁ｹ蝮暦ｼ梧怏轤ｹ豬ｪ雍ｹ遨ｺ髣�?
+always @(*) begin
+    if(SW[1] == 1) begin
+        occupy <= 0;
+        position <= 0;
+        clk_div <= 0;
+    end
+end
+
 //蛻晏ｧ句?
+wire [11:0] color_block;
 wire [11:0] shape;
 wire button_begin;
 wire [15:0] random_option;
 //random rand(.clk(clk), .ran_seed(clk_div), .rst(1'b0), .begin_button(SW[0]), .out(random_option));
 create_block create1(.S(clk_div[28:26]), .EN(SW[0]), .shape(shape));
+color_module color(.shape(shape), .block_color(color_block));
 wire [143:0] nextblock, nextblock_tleft, nextblock_tright, nextblock_tover;
 assign nextblock[6:4]=shape[2:0];
 assign nextblock[18:16]=shape[5:3];
@@ -84,7 +94,7 @@ reg lose;
 initial lose=0;
 
 //騾ｻ�?  ##荳崎�隶ｩ遞句ｺ剰ｿ帛�蜷御�??荳ｪ譌ｶ髓溽噪if隸ｭ蜿･�御ｼ壼�邇ｰ螟夐㍾鬩ｱ蜉ｨ逧�琉鬚?
-reg [15:0] singal_ele = 16'h0;
+reg [15:0] singal_ele = 16'h0;        //用来实现计分
 always @(posedge clk) begin
     if(block_clk[25:0]==0) begin      //�??諷｢逧�慮髓滓�?�蛻ｶ閾ｪ蜉ｨ荳玖誠
         if(position & occupy) begin
@@ -161,6 +171,7 @@ always @(posedge clk) begin
             singal_ele = singal_ele + 16'h0001;
         end
 
+        //进位
         if(singal_ele[3:0] == a) begin
             singal_ele[7:4] = singal_ele[7:4] + 4'h1;
             singal_ele[3:0] = 0;
@@ -176,6 +187,8 @@ always @(posedge clk) begin
         if(singal_ele[15:12] == a) begin
             singal_ele = 16'h0000;
         end
+
+        //实现旋转
     end else if(block_clk[23:0]==0) begin
         if((~turn_left|~turn_right) & ~(img_isleft & img_isright) & !(img_all & occupy)) begin
             if(~turn_left) begin
