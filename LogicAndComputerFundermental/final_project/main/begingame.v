@@ -11,8 +11,7 @@ reg flag = 0;
 clk_div div1(.clk(clk), .rst(0), .div_res(clk_div));
 
 genvar i;
-for(i = 0; i < 30; i = i + 2) begin
-    create_block create1(.clk(clk_div[i+2:i]), .EN(SW), .shape(shape));
-end
+
+create_block create1(.S(clk_div[i+2:i]), .EN(SW), .shape(shape));
 
 endmodule
