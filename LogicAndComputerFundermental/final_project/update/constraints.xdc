@@ -22,8 +22,14 @@ set_property IOSTANDARD LVCMOS15 [get_ports {SW[5]}]
 set_property IOSTANDARD LVCMOS15 [get_ports {SW[6]}]
 set_property IOSTANDARD LVCMOS15 [get_ports {SW[7]}]
 
+
 set_property PACKAGE_PIN AF25 [get_ports buzzer]
 set_property IOSTANDARD LVCMOS33 [get_ports buzzer]
+=======
+# Buzzer
+# set_property PACKAGE_PIN AF25 [get_ports buzzer]
+# set_property IOSTANDARD LVCMOS33 [get_ports buzzer]
+
 
 
 # Key as inputs
@@ -233,4 +239,8 @@ set_property IOSTANDARD LVCMOS18 [get_ports {btn[0]}]
  set_property PACKAGE_PIN M22 [get_ports vga_hs]
  set_property PACKAGE_PIN M21 [get_ports vga_vs]
  set_property IOSTANDARD LVCMOS33 [get_ports vga_hs]
+
  set_property IOSTANDARD LVCMOS33 [get_ports vga_vs]
+=======
+ set_property IOSTANDARD LVCMOS33 [get_ports vga_vs]
+
