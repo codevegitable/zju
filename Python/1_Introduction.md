@@ -18,6 +18,7 @@
   > Windows上的搭建：
   > 1. 在<a href="https://www.python.org/">Python官网</a>中下载最新版Python并下载。
   > 2. 下载后会得到后缀为.msi的安装文件，双击后一直下一步基本就行了（有特殊要求记得更改）。
+  > <br> 
   > Linux上的搭建：
   > 一般Linux上都有Python安装，但版本可能太旧了。
   ```
