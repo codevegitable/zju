@@ -7,7 +7,7 @@ module top(
     output btn_x,
     output vga_hs, vga_vs,  //vga謗･蜿｣菫｡蜿ｷ菴咲ｽｮ�井ｸ咲畑邂｡�?
     output [3:0] vga_red, vga_green, vga_blue,   //vga逧СGB菫｡蜿ｷ�井ｸ咲畑邂｡�?
-    // output buzzer,     //陷るｸ｣蝎ｨ�域嘯譌�??
+    output buzzer,     //陷るｸ｣蝎ｨ�域嘯譌�??
     output [3:0] AN,
     output [7:0] SEGMENT
 );
@@ -276,5 +276,5 @@ vgac v0(
 //);
 
 DisplayNumber Disp(.clk(clk), .rst(0), .hexs(singal_ele), .points(16'h0000), .LEs(16'h0000), .AN(AN), .SEGMENT(SEGMENT));
-
+buzzer_driver buzzer1(.clk(clk), .begin_button(SW[0]), .note(buzzer));
 endmodule
