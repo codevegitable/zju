@@ -3,8 +3,9 @@
 module top(
     input clk,  //100MHz的时�?
     input [7:0] SW, //�?�?
-    input [3:0] btn,
+    input [4:0] btn,
     output btn_x,
+    output btn_y,
     output vga_hs, vga_vs,  //vga接口信号位置（不用管�?
     output [3:0] vga_red, vga_green, vga_blue,   //vga的RGB信号（不用管�?
     output [3:0] AN,
@@ -68,11 +69,18 @@ assign position_left=position>>1;
 assign position_right=position<<1;
 
 //平移、旋转按键的去抖�?
-wire left, right, turn_left, turn_right, speed_up;
+wire left, right, turn_left, turn_right, speed_up, reset;
 pbdebounce debounce0(.clk(clk), .button(btn[0]), .pbreg(turn_right));
 pbdebounce debounce1(.clk(clk), .button(btn[1]), .pbreg(right));
 pbdebounce debounce2(.clk(clk), .button(btn[2]), .pbreg(left));
 pbdebounce debounce3(.clk(clk), .button(btn[3]), .pbreg(turn_left));
+pbdebounce debounce4(.clk(clk), .button(btn[4]), .pbreg(reset));
+
+always @(posedge reset) begin
+    position = 0;
+    occupy = 0;
+end
+
 assign btn_x=0;
 assign speed_up=SW[2];
 //到左右边界的判断（使要出界时按键失效�?
@@ -297,6 +305,6 @@ vgac v0(
 //buzzer_driver(
 //    .clk(clk), .note(note), .beep(buzzer)
 //);
-buzzer_driver buzzer1(.clk(clk), .begin_button(SW[0]), .note(buzzer));
+buzzer_driver buzzer1(.clk(clk_div[17]), .begin_button(SW[0]), .note(buzzer));
 
 endmodule
