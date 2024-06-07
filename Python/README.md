@@ -4,4 +4,4 @@
 
   [Introduction](1_Introduction.md)
 
-  [Funderment of Python](2_Funderment_of_Python.md)
+  [Fundament of Python](2_Fundament_of_Python.md)
