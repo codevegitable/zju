@@ -9,7 +9,9 @@
 
   其次，你也可以在命令行里运行你已经编写好的程序。
   ```
-  python3 file.py
+  print("hello, world")            //程序代码
+
+  python3 file.py                  //在命令行中执行
   ```
   <br>![alt text](images/file.py.png)<br>
   运行成功。
