@@ -22,6 +22,13 @@ end
 
 reg [199:0] occupy;     //已经下落的方块分布信�?
 reg [199:0] position;   //屏幕上正在下落的方块分布信息（其实只有一坨方块，有点浪费空间
+always @(posedge clk) begin
+    if(SW[1] == 1) begin
+        position = 0;
+        occupy = 0;
+        clk_div = 0;
+    end
+end
 //初始�?
 wire [11:0] shape;
 wire button_begin;
