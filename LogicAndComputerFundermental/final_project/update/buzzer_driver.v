@@ -7,6 +7,7 @@ module buzzer_driver (
 reg [31:0] counter[6:0];
 reg [31:0] temp_div_time[6:0];
 
+//七音频率
 parameter frequence_do = 261.6;
 parameter frequence_re = 293.6;
 parameter frequence_mi = 329.6;
@@ -16,6 +17,7 @@ parameter frequence_la = 440;
 parameter frequence_si = 493.8;
 parameter clk_fre = 100000000;
 
+//生成对应时钟脉冲
 function [31:0] div_clk_fre(input real frequence_note);
     div_clk_fre = clk_fre / (2 * frequence_note);
 endfunction
