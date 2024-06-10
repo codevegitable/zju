@@ -55,13 +55,14 @@ end
 
 reg [3:0] note_ouput[6:0];
 //reg [127:0] lyric = 128'hffff0261354760225411022546103332;
-reg [127:0] lyric = 128'h3444127563312256331705642731ffff;
+//reg [127:0] lyric = 128'h3444127563312256331705642731ffff;
 //reg [127:0] lyric = 128'h10101030606060503030303090909080;
+reg [627:0] lyric = 628'h5023040320101030504302023040503010105035043020230405030101005023040320202304050301010040607605053050435020203010100500300400200300007005003004002003050070000;
 reg [3:0] temp_lyric;
 
 always @(posedge clk_div[24]) begin
-    lyric[127:4]<=lyric[123:0];
-    lyric[3:0]<=lyric[127:124];
+    lyric[627:4]<=lyric[623:0];
+    lyric[3:0]<=lyric[627:624];
 end
 
 always @(posedge clk) begin
@@ -104,31 +105,31 @@ always @(posedge clk) begin
 end
 
 always @(posedge clk) begin
-    if(1 == lyric[127:124] && begin_button == 1 && counter[0]==0) begin
+    if(1 == lyric[627:624] && begin_button == 1 && counter[0]==0) begin
         note <= ~note;
     end
-    else if(2 == lyric[127:124] && begin_button == 1 && counter[1]==0) begin
+    else if(2 == lyric[627:624] && begin_button == 1 && counter[1]==0) begin
         note <= ~note;
     end
-    else if(3 == lyric[127:124] && begin_button == 1 && counter[2]==0) begin
+    else if(3 == lyric[627:624] && begin_button == 1 && counter[2]==0) begin
         note <= ~note;
     end
-    else if(4 == lyric[127:124] && begin_button == 1 && counter[3]==0) begin
+    else if(4 == lyric[627:624] && begin_button == 1 && counter[3]==0) begin
         note <= ~note;
     end
-    else if(5 == lyric[127:124] && begin_button == 1 && counter[4]==0) begin
+    else if(5 == lyric[627:624] && begin_button == 1 && counter[4]==0) begin
         note <= ~note;
     end
-    else if(6 == lyric[127:124] && begin_button == 1 && counter[5]==0) begin
+    else if(6 == lyric[627:624] && begin_button == 1 && counter[5]==0) begin
         note <= ~note;
     end
-    else if(7 == lyric[127:124] && begin_button == 1 && counter[6]==0) begin
+    else if(7 == lyric[627:624] && begin_button == 1 && counter[6]==0) begin
         note <= ~note;
     end
-    else if(8 == lyric[127:124] && begin_button == 1 && counter[7]==0) begin
+    else if(8 == lyric[627:624] && begin_button == 1 && counter[7]==0) begin
         note <= ~note;
     end
-    else if(9 == lyric[127:124] && begin_button == 1 && counter[8]==0) begin
+    else if(9 == lyric[627:624] && begin_button == 1 && counter[8]==0) begin
         note <= ~note;
     end
 end
