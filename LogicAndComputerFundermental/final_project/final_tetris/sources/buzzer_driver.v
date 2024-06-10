@@ -73,7 +73,7 @@ always @(posedge clk_div[23]) begin
     lyric[3:0]<=lyric[627:624];
 end
 
-reg [127:0] prompt = 128'h0;
+reg [127:0] prompt = {{20'h12345},{108{1'b0}}};
 always @(posedge clk) begin
     if(getscore & ~pre_getscore) begin
         prompt[127:116]<=12'h135;
@@ -81,13 +81,6 @@ always @(posedge clk) begin
     end
     else if(~getscore & pre_getscore) begin
         pre_getscore<=0;
-    end
-    else if(begin_button & ~pre_begin) begin
-        prompt[127:108]<=20'h12345;
-        pre_begin<=1;
-    end
-    else if(~begin_button & pre_begin) begin
-        pre_begin<=0;
     end
     else if(lose & ~pre_lose) begin
         prompt[127:108]<=20'h54321;
