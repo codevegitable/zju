@@ -1,14 +1,14 @@
 
 module top(
-    input clk,  //100MHz的时�?
-    input [7:0] SW, //�?�?
+    input clk,  //100MHz的时�?
+    input [7:0] SW, //�?�?
     input [3:0] btn,
     output btn_x,
-    output vga_hs, vga_vs,  //vga接口信号位置（不用管�?
-    output [3:0] vga_red, vga_green, vga_blue,   //vga的RGB信号（不用管�?
+    output vga_hs, vga_vs,  //vga接口信号位置（不用管�?
+    output [3:0] vga_red, vga_green, vga_blue,   //vga的RGB信号（不用管�?
     output [3:0] AN,
     output [7:0] SEGMENT,
-    output buzzer     //蜂鸣器（暂无�?
+    output buzzer     //蜂鸣器（暂无�?
 );
 
 //时钟分频 获得不同频率时钟信号
@@ -22,7 +22,7 @@ reg [9:0] score;
 initial score=0;
 reg getscore=0;
 
-reg [199:0] occupy;     //已经下落的方块分布信�?
+reg [199:0] occupy;     //已经下落的方块分布信�?
 reg [199:0] position;   //屏幕上正在下落的方块分布信息（其实只有一坨方块，有点浪费空间
 
 wire pause, rst, lose;
@@ -53,7 +53,7 @@ always @(posedge clk) begin
     end else if(rst^pre_rst & ~pre_lose) pre_rst<=rst;
 end
 
-//初始�?
+//初始�?
 reg [2:0] shape;
 wire [15:0] random_option;
 //random rand(.clk(clk), .ran_seed(clk_div), .rst(1'b0), .begin_button(SW[0]), .out(random_option));
@@ -77,13 +77,13 @@ initial begin
     shape=clk_div[28:26];
 end
 
-//下落方块的下�?帧位�?
+//下落方块的下�?帧位�?
 wire [199:0] position_below, position_left, position_right;
 assign position_below = position<<10;
 assign position_left=position>>1;
 assign position_right=position<<1;
 
-//平移、旋转按键的去抖�?
+//平移、旋转按键的去抖�?
 wire left, right, turn_left, turn_right, speed_up;
 pbdebounce debounce0(.clk(clk), .button(btn[0]), .pbreg(turn_right));
 pbdebounce debounce1(.clk(clk), .button(btn[1]), .pbreg(right));
@@ -91,11 +91,11 @@ pbdebounce debounce2(.clk(clk), .button(btn[2]), .pbreg(left));
 pbdebounce debounce3(.clk(clk), .button(btn[3]), .pbreg(turn_left));
 assign btn_x=0;
 assign speed_up=SW[2];
-//到左右边界的判断（使要出界时按键失效�?
+//到左右边界的判断（使要出界时按键失效�?
 wire isleftb, isrightb;
-JudgeBound(.block(position), .isLeftBound(isleftb), .isRightBound(isrightb));
+JudgeBound JudgeBound1(.block(position), .isLeftBound(isleftb), .isRightBound(isrightb));
 
-//逻辑  ##不能让程序进入同�?个时钟的if语句，会出现多重驱动的问�?
+//逻辑  ##不能让程序进入同�?个时钟的if语句，会出现多重驱动的问�?
 always @(posedge clk) begin
     if((rst^pre_rst) & pre_lose) begin
         score<=0;
@@ -103,7 +103,7 @@ always @(posedge clk) begin
     else if(~beginning) begin
         position<=0;
         occupy<=0;
-    end else if(clk_div[25:0]==0 & ~pause) begin      //�?慢的时钟控制自动下落
+    end else if(clk_div[25:0]==0 & ~pause) begin      //�?慢的时钟控制自动下落
         if(position_below & occupy || position[199:190] || position==0) begin
             occupy<=occupy|position;
             position<=nextblock;
@@ -115,7 +115,7 @@ always @(posedge clk) begin
             image<=image<<10; image_tleft<=image_tleft<<10;
             image_tright<=image_tright<<10; image_tover<=image_tover<<10;
         end 
-    end else if(clk_div[23:0]==1 & ~pause) begin   //次慢的时钟控制消�?
+    end else if(clk_div[23:0]==1 & ~pause) begin   //次慢的时钟控制消�?
         if(occupy[9:0]==10'h3ff) begin
             occupy[9:0]<=0;
             score<=score+1; getscore<=1;
@@ -227,7 +227,7 @@ always @(posedge clk) begin
                 image_tover<=image_tleft; image_tleft<=image;
             end
         end
-    end else if(clk_div[22:0]==0 & ~pause) begin   //�?快的时钟控制左右平移（以及旋转待完善�?
+    end else if(clk_div[22:0]==0 & ~pause) begin   //�?快的时钟控制左右平移（以及旋转待完善�?
         if(~left & ~isleftb & !(position_left & occupy)) begin
             position<=position_left;
             image<=image>>1; image_tleft<=image_tleft>>1;
@@ -250,14 +250,14 @@ wire [15:0] score_d;
 b_to_d d(.digit_b(score), .digit_d(score_d));
 DisplayNumber display(.clk(clk), .rst(1'b0), .hexs(score_d), .points(4'h0), .LEs(4'h0), .AN(AN), .SEGMENT(SEGMENT));
 
-//������?
+//������?
 wire [11:0] color;
-wire [9:0] x;   //当前像素点的原始横坐�?
-wire [8:0] y;   //当前像素点的原始纵坐�?
-wire [3:0] px;  //这一点所�?12*12分区的横坐标
-wire [4:0] py;  //这一点所�?12*12分区的纵坐标
-wire [7:0] p;   //�?12*12分区坐标压成�?行后，该分区的位�?
-//具体赋�??
+wire [9:0] x;   //当前像素点的原始横坐�?
+wire [8:0] y;   //当前像素点的原始纵坐�?
+wire [3:0] px;  //这一点所�?12*12分区的横坐标
+wire [4:0] py;  //这一点所�?12*12分区的纵坐标
+wire [7:0] p;   //�?12*12分区坐标压成�?行后，该分区的位�?
+//具体赋�??
 assign px=(x-200)/24;
 assign py=y/24;
 assign p=py*10+px;

@@ -1,0 +1,116 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Jun 12 16:18:54 2024
+| Host         : yqgg running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k160t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   185 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |    23 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             157 |           51 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             138 |           39 |
+| Yes          | No                    | No                     |             810 |          660 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             422 |          223 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------------------+-------------------------------+------------------+----------------+--------------+
+|       Clock Signal       |        Enable Signal        |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------+-----------------------------+-------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG           | buzzing/prompt1_in[112]     | buzzing/prompt[114]_i_1_n_0   |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG           | buzzing/prompt[126]_i_2_n_0 | buzzing/prompt111_out         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG           | occupy[169]_i_1_n_0         | position[199]_i_1_n_0         |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG           | occupy[69]_i_1_n_0          | position[199]_i_1_n_0         |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG           | occupy[9]_i_1_n_0           | position[199]_i_1_n_0         |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG           | score[9]_i_2_n_0            | JudgeImg/pre_lose0            |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG           | occupy[99]_i_1_n_0          | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[89]_i_1_n_0          | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_div_reg_BUFG[1]     |                             | v0/v_count                    |                2 |             10 |         5.00 |
+|  clk_div_reg_BUFG[1]     | v0/v_count                  |                               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG           | occupy[29]_i_1_n_0          | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[179]_i_1_n_0         | position[199]_i_1_n_0         |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG           | occupy[109]_i_1_n_0         | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[119]_i_1_n_0         | position[199]_i_1_n_0         |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG           | occupy[129]_i_1_n_0         | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[149]_i_1_n_0         | position[199]_i_1_n_0         |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG           | occupy[139]_i_1_n_0         | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[159]_i_1_n_0         | position[199]_i_1_n_0         |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG           | occupy[189]_i_1_n_0         | position[199]_i_1_n_0         |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG           | occupy[19]_i_1_n_0          | position[199]_i_1_n_0         |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG           | occupy[39]_i_1_n_0          | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[199]_i_1_n_0         | position[199]_i_1_n_0         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG           | occupy[79]_i_1_n_0          | position[199]_i_1_n_0         |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG           | occupy[49]_i_1_n_0          | position[199]_i_1_n_0         |                8 |             10 |         1.25 |
+|  clk_IBUF_BUFG           | occupy[59]_i_1_n_0          | position[199]_i_1_n_0         |                6 |             10 |         1.67 |
+|  clk_div_reg_BUFG[1]     |                             | v0/rdn_reg_n_0                |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[4][0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[5][0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[6][0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[0][0]_i_1_n_0 |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[2][0]_i_1_n_0 |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[3][0]_i_1_n_0 |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG           |                             | buzzing/counter[1][0]_i_1_n_0 |                5 |             17 |         3.40 |
+|  buzzing/clk_div_reg[23] |                             |                               |                6 |             18 |         3.00 |
+|  clk_div_reg_BUFG[1]     |                             |                               |                8 |             22 |         2.75 |
+|  clk_IBUF_BUFG           |                             |                               |               40 |            132 |         3.30 |
+|  clk_IBUF_BUFG           | nolabel_line96/E[0]         | position[199]_i_1_n_0         |              121 |            200 |         1.65 |
+|  clk_IBUF_BUFG           | JudgeImg/E[0]               |                               |              657 |            800 |         1.22 |
++--------------------------+-----------------------------+-------------------------------+------------------+----------------+--------------+
+
+
