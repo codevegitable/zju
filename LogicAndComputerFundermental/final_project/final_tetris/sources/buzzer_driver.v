@@ -1,9 +1,10 @@
+//蜂鸣器驱动
 module buzzer_driver (
-    input clk,
-    input begin_button,
-    input getscore,
-    input lose,
-    output reg note
+    input clk,              //时钟信号
+    input begin_button,     //开始信号
+    input getscore,         //得分信号，得分后的音乐
+    input lose,             //输掉之后的音乐
+    output reg note         //输出
 );
 
 reg pre_begin, pre_getscore, pre_lose;
@@ -18,6 +19,7 @@ reg [31:0] clk_div;
 reg [31:0] counter[8:0];
 reg [31:0] temp_div_time[8:0];
 
+//9个音符的频率以及时钟频率
 parameter frequence_do = 523;
 parameter frequence_re = 587;
 parameter frequence_mi = 659;
@@ -29,6 +31,7 @@ parameter frequence_la_low = 440;
 parameter frequence_si_low = 494;
 parameter clk_fre = 100000000;
 
+//产生对应的声音
 function [31:0] div_clk_fre(input real frequence_note);
     div_clk_fre = clk_fre / (2 * frequence_note);
 endfunction
@@ -64,15 +67,18 @@ end
 
 reg [3:0] note_ouput[6:0];
 //reg [127:0] lyric = 128'hffff0261354760225411022546103332;
+//乐谱，俄罗斯方块bgm《货郎》像素风版
 reg [627:0] lyric = 628'h5023040320101030504302023040503010105035043020230405030101005023040320202304050301010040607605053050435020203010100500300400200300007005003004002003050070000;
 //reg [127:0] lyric = 128'h10101030606060503030303090909080;
 reg [3:0] temp_lyric;
 
+//乐谱进行左移读取，同时将左移位数据串入最右端以循环播放
 always @(posedge clk_div[23]) begin
     lyric[627:4]<=lyric[623:0];
     lyric[3:0]<=lyric[627:624];
 end
 
+//开始/得分/结束的音效
 reg [127:0] prompt = {{20'h12345},{108{1'b0}}};
 always @(posedge clk) begin
     if(getscore & ~pre_getscore) begin
@@ -94,6 +100,7 @@ always @(posedge clk) begin
     end
 end
 
+//时序，控制不同的音符发出相应的频率的声音
 always @(posedge clk) begin
 
     if(counter[0] >= temp_div_time[0]) begin
@@ -126,6 +133,7 @@ always @(posedge clk) begin
     
 end
 
+//note输出，note每进行一次反转便发出一次声音
 always @(posedge clk) begin
     if(1 == prompt[127:124] && counter[0]==0) begin
         note <= ~note;
