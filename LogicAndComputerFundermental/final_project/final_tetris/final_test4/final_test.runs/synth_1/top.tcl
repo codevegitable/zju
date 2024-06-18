@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/vivado_projects/final_test4/final_test.runs/synth_1/top.tcl"
+  variable script "E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -77,71 +78,71 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/vivado_projects/final_test4/final_test.cache/wt [current_project]
-set_property parent.project_path D:/vivado_projects/final_test4/final_test.xpr [current_project]
+set_property webtalk.parent_dir E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.cache/wt [current_project]
+set_property parent.project_path E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/vivado_projects/final_test4/final_test.cache/ip [current_project]
+set_property ip_output_repo e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files D:/vivado_projects/final_test4/images/block/red.coe
-add_files D:/vivado_projects/final_test4/images/block/orange.coe
-add_files D:/vivado_projects/final_test4/images/block/yellow.coe
-add_files D:/vivado_projects/final_test4/images/block/green.coe
-add_files D:/vivado_projects/final_test4/images/block/cyan.coe
-add_files D:/vivado_projects/final_test4/images/block/blue.coe
-add_files D:/vivado_projects/final_test4/images/block/purple.coe
-add_files D:/vivado_projects/final_test4/images/block/gray.coe
-add_files D:/vivado_projects/final_test4/images/cover.coe
-add_files D:/vivado_projects/final_test4/images/end.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/red.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/orange.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/yellow.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/green.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/cyan.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/blue.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/purple.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/block/gray.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/cover.coe
+add_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/images/end.coe
 read_verilog -library xil_defaultlib {
-  D:/vivado_projects/final_test4/sources/Mux4to1/gates/AND_GATE.v
-  D:/vivado_projects/final_test4/sources/DisplayNumber.v
-  D:/vivado_projects/final_test4/sources/DisplaySync.v
-  D:/vivado_projects/final_test4/final_test.srcs/sources_1/new/JudgeBound.v
-  D:/vivado_projects/final_test4/sources/MC14495.v
-  D:/vivado_projects/final_test4/sources/Mux4to1/circuit/Mux4to1.v
-  D:/vivado_projects/final_test4/sources/Mux4to1b4.v
-  D:/vivado_projects/final_test4/sources/Mux4to1/gates/OR_GATE_4_INPUTS.v
-  D:/vivado_projects/final_test4/final_test.srcs/sources_1/new/b_to_d.v
-  D:/vivado_projects/final_test4/sources/buzzer_driver.v
-  D:/vivado_projects/final_test4/sources/clkdiv.v
-  D:/vivado_projects/final_test4/sources/create_block.v
-  D:/vivado_projects/final_test4/sources/pbdebounce.v
-  D:/vivado_projects/final_test4/final_test.srcs/sources_1/new/show.v
-  D:/vivado_projects/final_test4/sources/vgac.v
-  D:/vivado_projects/final_test4/sources/top.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/Mux4to1/gates/AND_GATE.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/DisplayNumber.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/DisplaySync.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/new/JudgeBound.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/MC14495.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/Mux4to1/circuit/Mux4to1.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/Mux4to1b4.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/Mux4to1/gates/OR_GATE_4_INPUTS.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/new/b_to_d.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/buzzer_driver.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/clkdiv.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/create_block.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/pbdebounce.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/new/show.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/vgac.v
+  E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/top.v
 }
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/yellow/yellow.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/yellow/yellow_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/yellow/yellow.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/yellow/yellow_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/green/green.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/green/green_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/green/green.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/green/green_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/cyan/cyan.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/cyan/cyan_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/cyan/cyan.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/cyan/cyan_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/blue/blue.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/blue/blue_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/blue/blue.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/blue/blue_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/purple/purple.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/purple/purple_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/purple/purple.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/purple/purple_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/gray/gray.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/gray/gray_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/gray/gray.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/gray/gray_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/red/red.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/red/red_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/red/red.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/red/red_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/orange/orange.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/orange/orange_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/orange/orange.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/orange/orange_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/cover/cover.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/cover/cover_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/cover/cover.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/cover/cover_ooc.xdc]
 
-read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/over/over.xci
-set_property used_in_implementation false [get_files -all d:/vivado_projects/final_test4/final_test.gen/sources_1/ip/over/over_ooc.xdc]
+read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/over/over.xci
+set_property used_in_implementation false [get_files -all e:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.gen/sources_1/ip/over/over_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -152,12 +153,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/vivado_projects/final_test4/sources/constraints.xdc
-set_property used_in_implementation false [get_files D:/vivado_projects/final_test4/sources/constraints.xdc]
+read_xdc E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/constraints.xdc
+set_property used_in_implementation false [get_files E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/vivado_projects/final_test4/final_test.srcs/utils_1/imports/synth_1/top.dcp
+read_checkpoint -auto_incremental -incremental E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

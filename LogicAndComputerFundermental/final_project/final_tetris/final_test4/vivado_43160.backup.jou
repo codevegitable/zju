@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun 12 16:21:08 2024
+# Process ID: 43160
+# Current directory: E:/github/zju/LogicAndComputerFundermental/final_project/final_test4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11024 E:\github\zju\LogicAndComputerFundermental\final_project\final_test4\final_test.xpr
+# Log file: E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/vivado.log
+# Journal file: E:/github/zju/LogicAndComputerFundermental/final_project/final_test4\vivado.jou
+# Running On: maple, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33968 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]

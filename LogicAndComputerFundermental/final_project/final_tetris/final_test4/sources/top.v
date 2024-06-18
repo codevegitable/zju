@@ -273,6 +273,6 @@ vgac v0(
     .r(vga_red), .g(vga_green), .b(vga_blue), .hs(vga_hs), .vs(vga_vs), .col_addr(x), .row_addr(y)
 );
 
-buzzer_driver buzzing(.clk(clk), .begin_button(beginning), .getscore(getscore), .lose(lose), .note(buzzer));
+buzzer_driver buzzing(.clk(clk&~SW[1]), .begin_button(beginning), .getscore(getscore), .lose(lose), .note(buzzer));
 
 endmodule

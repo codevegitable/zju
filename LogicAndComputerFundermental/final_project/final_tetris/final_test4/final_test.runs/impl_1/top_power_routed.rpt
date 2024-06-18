@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Wed Jun 12 16:19:28 2024
-| Host             : yqgg running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date             : Sat Jun 15 20:39:47 2024
+| Host             : maple running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
 | Device           : xc7k160tffg676-2L
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.207        |
+| Total On-Chip Power (W)  | 0.209        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.090        |
+| Dynamic (W)              | 0.092        |
 | Device Static (W)        | 0.117        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 99.6         |
@@ -52,19 +52,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.007 |        3 |       --- |             --- |
-| Slice Logic             |     0.038 |    15763 |       --- |             --- |
-|   LUT as Logic          |     0.036 |    11825 |    101400 |           11.66 |
+| Clocks                  |     0.008 |        3 |       --- |             --- |
+| Slice Logic             |     0.038 |    15764 |       --- |             --- |
+|   LUT as Logic          |     0.037 |    11825 |    101400 |           11.66 |
 |   F7/F8 Muxes           |    <0.001 |     1397 |    101400 |            1.38 |
 |   CARRY4                |    <0.001 |      198 |     25350 |            0.78 |
 |   Register              |    <0.001 |     1527 |    202800 |            0.75 |
 |   LUT as Shift Register |    <0.001 |       15 |     35000 |            0.04 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
 |   Others                |     0.000 |       18 |       --- |             --- |
-| Signals                 |     0.033 |    11357 |       --- |             --- |
+| Signals                 |     0.034 |    11356 |       --- |             --- |
 | I/O                     |     0.012 |       36 |       400 |            9.00 |
 | Static Power            |     0.117 |          |           |                 |
-| Total                   |     0.207 |          |           |                 |
+| Total                   |     0.209 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.118 |       0.078 |      0.040 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.120 |       0.080 |      0.040 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -144,8 +144,8 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| top              |     0.090 |
-|   buzzing        |     0.002 |
+| top              |     0.092 |
+|   buzzing        |     0.003 |
 |   debounce3      |     0.001 |
 |   nolabel_line96 |     0.004 |
 |   show_up        |     0.037 |

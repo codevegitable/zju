@@ -4,7 +4,7 @@
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
 echo "This script was generated under a different operating system."
@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Utilities/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/Utilities/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/Utilities/Vivado/2023.2/bin
+  PATH=D:/vivado/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/vivado/Vivado/2023.2/ids_lite/ISE/lib/nt64:D:/vivado/Vivado/2023.2/bin
 else
-  PATH=E:/Utilities/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/Utilities/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/Utilities/Vivado/2023.2/bin:$PATH
+  PATH=D:/vivado/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/vivado/Vivado/2023.2/ids_lite/ISE/lib/nt64:D:/vivado/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/vivado_projects/final_test3/final_test.runs/red_synth_1'
+HD_PWD='E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/red_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

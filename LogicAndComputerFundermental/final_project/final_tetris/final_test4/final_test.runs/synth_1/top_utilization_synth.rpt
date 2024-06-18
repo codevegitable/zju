@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Jun 12 16:18:02 2024
-| Host         : yqgg running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Sat Jun 15 20:36:47 2024
+| Host         : maple running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
 | Device       : xc7k160tffg676-2L
@@ -31,8 +31,8 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 4853 |     0 |          0 |    101400 |  4.79 |
-|   LUT as Logic             | 4838 |     0 |          0 |    101400 |  4.77 |
+| Slice LUTs*                | 4854 |     0 |          0 |    101400 |  4.79 |
+|   LUT as Logic             | 4839 |     0 |          0 |    101400 |  4.77 |
 |   LUT as Memory            |   15 |     0 |          0 |     35000 |  0.04 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |   15 |     0 |            |           |       |
@@ -121,7 +121,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |          0 |        32 |  6.25 |
+| BUFGCTRL   |    3 |     0 |          0 |        32 |  9.38 |
 | BUFIO      |    0 |     0 |          0 |        32 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         8 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         8 |  0.00 |
@@ -160,7 +160,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | LUT4     |  938 |                 LUT |
 | LUT5     |  734 |                 LUT |
 | LUT3     |  427 |                 LUT |
-| LUT2     |  242 |                 LUT |
+| LUT2     |  243 |                 LUT |
 | CARRY4   |  198 |          CarryLogic |
 | LUT1     |   88 |                 LUT |
 | OBUF     |   28 |                  IO |
@@ -168,8 +168,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | SRLC32E  |   15 |  Distributed Memory |
 | IBUF     |    8 |                  IO |
 | FDSE     |    5 |        Flop & Latch |
+| BUFG     |    3 |               Clock |
 | MUXF8    |    2 |               MuxFx |
-| BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 
 

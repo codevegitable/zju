@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="green_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718001466">
+<GenRun Id="green_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718453950">
   <File Type="PA-TCL" Name="green.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="green_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="green_reports.tcl"/>
   <File Type="RDS-RDS" Name="green.vds"/>
   <File Type="RDS-UTIL" Name="green_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="green_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="green.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="green_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="green_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/green" RelGenDir="$PGENDIR/green">
     <File Path="$PSRCDIR/sources_1/ip/green/green.xci">
       <FileInfo>

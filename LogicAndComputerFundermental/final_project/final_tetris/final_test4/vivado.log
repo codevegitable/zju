@@ -3,16 +3,18 @@
 # SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Wed Jun 12 16:21:08 2024
-# Process ID: 43160
-# Current directory: E:/github/zju/LogicAndComputerFundermental/final_project/final_test4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11024 E:\github\zju\LogicAndComputerFundermental\final_project\final_test4\final_test.xpr
-# Log file: E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/vivado.log
-# Journal file: E:/github/zju/LogicAndComputerFundermental/final_project/final_test4\vivado.jou
+# Start of session at: Sat Jun 15 20:01:49 2024
+# Process ID: 2152
+# Current directory: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19516 E:\github\zju\LogicAndComputerFundermental\final_project\final_tetris\final_test4\final_test.xpr
+# Log file: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/vivado.log
+# Journal file: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4\vivado.jou
 # Running On: maple, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33968 MB
 #-----------------------------------------------------------
 start_gui
-open_project E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.xpr
+open_project E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4'
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -71,17 +73,27 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 INFO: [Project 1-313] Project file moved from 'D:/vivado_projects/final_test4' since last save.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.ip_user_files'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.ip_user_files'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1546.328 ; gain = 403.438
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.113 ; gain = 297.156
 update_compile_order -fileset sources_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Xilinx hw_server v2023.2.2
+  **** Build date : Feb  9 2024 at 01:13:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
 INFO: [Labtools 27-3417] Launching cs_server...
 INFO: [Labtools 27-2221] Launch Output:
@@ -97,35 +109,103 @@ ECHO 处于关闭状态。
 
 
 
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2222.945 ; gain = 3.355
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
-set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241143643
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
 current_hw_device [get_hw_devices xc7k160t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
 INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
-set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
 program_hw_devices [get_hw_devices xc7k160t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1706.488 ; gain = 0.000
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2287.410 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210241143643
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210241143643
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2287.410 ; gain = 0.000
 refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
 INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
-set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
 program_hw_devices [get_hw_devices xc7k160t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1706.488 ; gain = 0.000
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2287.410 ; gain = 0.000
 refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
 INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
-set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
 program_hw_devices [get_hw_devices xc7k160t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1706.488 ; gain = 0.000
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2287.410 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/utils_1/imports/synth_1/top.dcp with file E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/synth_1/top.dcp
+reset_run yellow_synth_1
+reset_run green_synth_1
+reset_run cyan_synth_1
+reset_run blue_synth_1
+reset_run purple_synth_1
+reset_run gray_synth_1
+reset_run red_synth_1
+reset_run orange_synth_1
+reset_run cover_synth_1
+reset_run over_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'yellow'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'green'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cyan'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blue'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'purple'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gray'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'red'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'orange'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cover'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'over'...
+[Sat Jun 15 20:20:13 2024] Launched yellow_synth_1, green_synth_1, cyan_synth_1, blue_synth_1, purple_synth_1, gray_synth_1, red_synth_1, orange_synth_1, cover_synth_1, over_synth_1, synth_1...
+Run output will be captured here:
+yellow_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/yellow_synth_1/runme.log
+green_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/green_synth_1/runme.log
+cyan_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/cyan_synth_1/runme.log
+blue_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/blue_synth_1/runme.log
+purple_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/purple_synth_1/runme.log
+gray_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/gray_synth_1/runme.log
+red_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/red_synth_1/runme.log
+orange_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/orange_synth_1/runme.log
+cover_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/cover_synth_1/runme.log
+over_synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/over_synth_1/runme.log
+synth_1: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/synth_1/runme.log
+[Sat Jun 15 20:20:15 2024] Launched impl_1...
+Run output will be captured here: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:01:07 . Memory (MB): peak = 2287.410 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2287.410 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2287.410 ; gain = 0.000
 refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
 INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 16:30:08 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 21:39:02 2024...

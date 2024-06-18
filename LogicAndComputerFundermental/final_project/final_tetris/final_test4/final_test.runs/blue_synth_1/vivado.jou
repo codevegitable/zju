@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Jun 10 14:38:15 2024
-# Process ID: 9172
-# Current directory: D:/vivado_projects/final_test3/final_test.runs/blue_synth_1
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Sat Jun 15 20:20:19 2024
+# Process ID: 20644
+# Current directory: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/blue_synth_1
 # Command line: vivado.exe -log blue.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blue.tcl
-# Log file: D:/vivado_projects/final_test3/final_test.runs/blue_synth_1/blue.vds
-# Journal file: D:/vivado_projects/final_test3/final_test.runs/blue_synth_1\vivado.jou
-# Running On: yqgg, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 33492 MB
+# Log file: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/blue_synth_1/blue.vds
+# Journal file: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/blue_synth_1\vivado.jou
+# Running On: maple, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33968 MB
 #-----------------------------------------------------------
 source blue.tcl -notrace

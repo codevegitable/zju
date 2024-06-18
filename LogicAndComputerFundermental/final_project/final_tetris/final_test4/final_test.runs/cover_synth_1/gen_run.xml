@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="cover_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718001481">
+<GenRun Id="cover_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718453987">
   <File Type="PA-TCL" Name="cover.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cover_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cover_reports.tcl"/>
   <File Type="RDS-RDS" Name="cover.vds"/>
   <File Type="RDS-UTIL" Name="cover_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cover_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="cover.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cover_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cover_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cover" RelGenDir="$PGENDIR/cover">
     <File Path="$PSRCDIR/sources_1/ip/cover/cover.xci">
       <FileInfo>

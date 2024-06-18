@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="yellow_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718001465">
+<GenRun Id="yellow_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718453949">
   <File Type="PA-TCL" Name="yellow.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="yellow_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="yellow_reports.tcl"/>
   <File Type="RDS-RDS" Name="yellow.vds"/>
   <File Type="RDS-UTIL" Name="yellow_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="yellow_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="yellow.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="yellow_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="yellow_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/yellow" RelGenDir="$PGENDIR/yellow">
     <File Path="$PSRCDIR/sources_1/ip/yellow/yellow.xci">
       <FileInfo>

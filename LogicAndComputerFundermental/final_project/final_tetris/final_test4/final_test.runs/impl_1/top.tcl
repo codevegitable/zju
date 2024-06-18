@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/vivado_projects/final_test4/final_test.runs/impl_1/top.tcl"
+  variable script "E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,33 +122,34 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
-  set_param runs.launchOptions { -jobs 8  }
+  set_param chipscope.maxJobs 5
+  set_param xicom.use_bs_reader 1
+  set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7k160tffg676-2L
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/vivado_projects/final_test4/final_test.cache/wt [current_project]
-  set_property parent.project_path D:/vivado_projects/final_test4/final_test.xpr [current_project]
-  set_property ip_output_repo D:/vivado_projects/final_test4/final_test.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.cache/wt [current_project]
+  set_property parent.project_path E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.xpr [current_project]
+  set_property ip_output_repo E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/vivado_projects/final_test4/final_test.runs/synth_1/top.dcp
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/yellow/yellow.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/green/green.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/cyan/cyan.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/blue/blue.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/purple/purple.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/gray/gray.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/red/red.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/orange/orange.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/cover/cover.xci
-  read_ip -quiet D:/vivado_projects/final_test4/final_test.srcs/sources_1/ip/over/over.xci
+  add_files -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.runs/synth_1/top.dcp
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/yellow/yellow.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/green/green.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/cyan/cyan.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/blue/blue.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/purple/purple.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/gray/gray.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/red/red.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/orange/orange.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/cover/cover.xci
+  read_ip -quiet E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.srcs/sources_1/ip/over/over.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/vivado_projects/final_test4/sources/constraints.xdc
+  read_xdc E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/sources/constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
