@@ -7,3 +7,5 @@
   [Fundament of Python](2_Fundament_of_Python.md)
 
   [String](3_String.md)
+
+  [List and Tuple](4_List_Tuple.md)
