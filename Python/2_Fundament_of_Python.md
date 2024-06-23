@@ -61,6 +61,7 @@
   ```
   print("<content>")  or  print('<content>')        //输出字符串
   print(<variable value>)                           //输出定义的变量，不需要''或""
+  print(f"{<variable value>}")                      //配合其他字符输出
   ```
 
 ### 2.2变量类型
