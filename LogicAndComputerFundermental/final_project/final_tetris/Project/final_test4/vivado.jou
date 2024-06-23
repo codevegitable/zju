@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Jun 20 17:47:30 2024
+# Process ID: 4956
+# Current directory: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3636 E:\github\zju\LogicAndComputerFundermental\final_project\final_tetris\final_test4\final_test.xpr
+# Log file: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/vivado.log
+# Journal file: E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4\vivado.jou
+# Running On: maple, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33968 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/github/zju/LogicAndComputerFundermental/final_project/final_tetris/final_test4/final_test.xpr
+update_compile_order -fileset sources_1
+reset_project

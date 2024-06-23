@@ -53,7 +53,7 @@ always @(posedge clk) begin
     end else if(rst^pre_rst & ~pre_lose) pre_rst<=rst;
 end
 
-//初始�?
+//初始
 reg [2:0] shape;
 wire [15:0] random_option;
 //random rand(.clk(clk), .ran_seed(clk_div), .rst(1'b0), .begin_button(SW[0]), .out(random_option));
