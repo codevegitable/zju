@@ -5,3 +5,5 @@
   [Introduction](1_Introduction.md)
 
   [Fundament of Python](2_Fundament_of_Python.md)
+
+  [String](3_String.md)
