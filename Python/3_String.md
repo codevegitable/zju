@@ -52,8 +52,7 @@
   string = string.lower()           # 小写方法，所有的字符都变成小写字母
   print(string)
 
-  string = string.title()           # 只有首字母会大写。如果使用空格隔开，那么各
-  单词会逐一首字母大写
+  string = string.title()           # 只有首字母会大写。如果使用空格隔开，那么各单词会逐一首字母大写
   print(string)
   ```
   查看输出：
