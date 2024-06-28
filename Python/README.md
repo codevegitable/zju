@@ -9,3 +9,5 @@
   [String](3_String.md)
 
   [List and Tuple](4_List_Tuple.md)
+
+  [Dictionary](5_Dictionary.md)
